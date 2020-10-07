@@ -12,7 +12,7 @@ int strlen(char* word)
 int main()
 {
 	char word[99999];
-	scanf("%s", &word);
+	scanf("%[^\n]", &word);
 	int len = strlen(word), rod;
 	scanf("%d", &rod);
 	rod %= 26;
